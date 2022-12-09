@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI_Shell.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI_Shell"
+    Shell.FlyoutBehavior="Flyout">
+    <!--<Shell.FlyoutIcon>
+        <FontImageSource Color="Red" Glyph="&#xF505;" />
+    </Shell.FlyoutIcon>-->
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout>
+            <Label Text="Header" FontSize="Large"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+    
+    <FlyoutItem Title="Flyout 1" FlyoutDisplayOptions="AsMultipleItems" Icon="sket">
+        <ShellContent
+        Title="Home 1.1"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        <ShellContent
+        Title="Home 1.2"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        <ShellContent
+        Title="Home 1.3"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Flyout 2" Icon="battery">
+        <ShellContent
+        Title="Home 2"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <MenuItem Text="Menu 1" IconImageSource="kite" Clicked="MenuItem_Clicked"/>
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout>
+            <Label Text="Footer" FontSize="Large"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutFooter>
+    <!--<TabBar>
+        <Tab Title="Home" Icon="homepage">
+            <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        </Tab>
+        <Tab Title="List" Icon="bulletedlist ">
+            <ShellContent
+        Title="Home"
+       
+        Route="MainPage">
+                <ContentPage>
+                    <VerticalStackLayout>
+                        <Label Text="Tab 2"/>
+                    </VerticalStackLayout>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Home" Icon="homepage">
+            <ShellContent
+        Title="Home1"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+            <ShellContent
+        Title="Home2"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+            <ShellContent
+        Title="Home3"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        </Tab>
+    </TabBar>-->
+
+   
+
+</Shell>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI_Shell_Customization.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI_Shell_Customization"
+    Shell.FlyoutBehavior="Flyout">
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="50,*" Padding="10">
+                <Image Source="{Binding Icon}"/>
+                <Label Grid.Column="1" Text="{Binding Title}"
+                        TextColor="Red"
+                       FontAttributes="Bold"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <FlyoutItem Title="Home 1" Icon="battery">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Home 2" Icon="bulletedlist">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Home 3" Icon="homepage">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Home 4" Icon="kite">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Home 5" Icon="rafting">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Home 6" Icon="sket">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+
+
+</Shell>
